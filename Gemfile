@@ -8,8 +8,18 @@ gem 'rails', '3.0.7'
 gem 'sqlite3'
 gem 'devise'
 gem 'cancan'
+gem 'factory_girl'
+gem 'haml_rails'
+gem 'cucumber-rails'
 gem 'ice_cube'
 
+
+group :test do
+  gem 'rspec-rails'
+  gem 'shoulda'
+  gem 'shoulda-matchers'
+  gem 'shoulda-context'
+end
 # Use unicorn as the web server
 # gem 'unicorn'
 
@@ -23,8 +33,9 @@ gem 'ice_cube'
 # Bundle the extra gems:
 # gem 'bj'
 # gem 'nokogiri'
-# gem 'sqlite3-ruby', :require => 'sqlite3'
+ gem 'sqlite3-ruby', :require => 'sqlite3'
 # gem 'aws-s3', :require => 'aws/s3'
+ gem 'database_cleaner'
 
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators

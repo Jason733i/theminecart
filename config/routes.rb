@@ -1,4 +1,7 @@
 Theminecart::Application.routes.draw do
+
+  devise_for :users
+
   get "article/index"
 
   get "article/create"
