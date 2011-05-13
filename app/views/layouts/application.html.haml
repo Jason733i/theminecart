@@ -6,7 +6,14 @@
     = javascript_include_tag :defaults
     = csrf_meta_tag
   %body
+    #header
+      = render "layouts/header"
+    #menu
+      = render "layouts/menu"
     %p.notice= notice
     %p.alert= alert
+
     #container
       = yield
+    #footer
+      = render "layouts/footer"
