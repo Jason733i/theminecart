@@ -9,10 +9,16 @@ gem 'sqlite3'
 gem 'devise'
 gem 'cancan'
 gem 'factory_girl'
-gem 'haml_rails'
+gem 'haml-rails'
+gem 'haml'
 gem 'cucumber-rails'
 gem 'ice_cube'
+gem 'passenger'
 
+group :development do
+  gem 'hpricot'
+  gem 'ruby_parser'
+end
 
 group :test do
   gem 'rspec-rails'
