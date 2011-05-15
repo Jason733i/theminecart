@@ -8,12 +8,16 @@
   %body
     #header
       = render "layouts/header"
-    #menu
-      = render "layouts/menu"
-    %p.notice= notice
-    %p.alert= alert
 
+    #left
+      = render "layouts/left"
     #container
+      #menu
+        = render "layouts/menu"
+      %p.notice= notice
+      %p.alert= alert
       = yield
+    #right
+      = render "layouts/right"
     #footer
       = render "layouts/footer"

@@ -8,4 +8,7 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me
 
   ROLES = %w[super_admin admin moderator member banned]
+
+
+
 end

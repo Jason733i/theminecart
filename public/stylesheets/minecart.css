@@ -4,12 +4,39 @@
 }
 body {
 	text-align:center;
-	margin:0 auto;
-	padding:0;
-	border:#666666 2px solid;
-	width:1024px;
+	margin: 0 auto;
+	padding: 0;
+	width: 1000px;
+}
+
+#header {
+    width: 100%;
+    float: left;
+    min-height: 100px;
+}
+
+#menu {
+    width: 100%;
+    float: left;
+}
+
+#left {
+    width: 150px;
+    float:left;
 }
 
 #container {
-	min-height:600px;
+	width: 700px;
+    float: left;
+}
+
+#right {
+    width: 150px;
+    float:left;
+}
+
+#footer {
+    width: 100%;
+    float: left;
+
 }
