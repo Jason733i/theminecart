@@ -3,7 +3,7 @@ class Ability
 
   def initialize(user)
 
-    if user.superadmin?
+    if user.super_admin?
       can :manage, :all
     else if user.admin?
       can [:create, :update, :read], :all
@@ -12,6 +12,8 @@ class Ability
     else if user.member?
       can :read, :all
     end
+
+  end
     # Define abilities for the passed in user here. For example:
     #
     #   user ||= User.new # guest user (not logged in)
@@ -34,5 +36,4 @@ class Ability
     #   can :update, Article, :published => true
     #
     # See the wiki for details: https://github.com/ryanb/cancan/wiki/Defining-Abilities
-  end
 end
