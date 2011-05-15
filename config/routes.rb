@@ -1,5 +1,15 @@
 Theminecart::Application.routes.draw do
 
+  get "user/index"
+
+  get "user/new"
+
+  get "user/show"
+
+  get "user/destroy"
+
+  get "user/create"
+
   devise_for :users
 
   get "article/index"
